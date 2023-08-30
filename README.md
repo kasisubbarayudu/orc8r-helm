@@ -1,11 +1,13 @@
 # orc8r-helm
 
 > [!NOTE]
-> Highlights information that users should take into account, even when skimming. \n
-> I am hind
-
+> Replace the above values with yours.
+>
+> Set `CROSS_ACCOUNT_ACCESS` to "True" to enable cross-account access support. 
 > [!IMPORTANT]
-> Crucial information necessary for users to succeed.
+> If the `CROSS_ACCOUNT_ACCESS` is set to True:
+>
+> - [x]  [ Mandatory ]: Set `"IAM_ROLE_ARN"` to the ARN of the IAM role in the target account.
+>
+> - [x] [ Mandatory ]: Set `"SOURCE_PROFILE"` to the AWS CLI named profile containing the source account's credentials.
 
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
