@@ -1,7 +1,8 @@
 # orc8r-helm
 
 > [!NOTE]
-Highlights information that users should take into account, even when skimming.
+1) Highlights information that users should take into account, even when skimming.
+2) I am hind
 
 > [!IMPORTANT]
 > Crucial information necessary for users to succeed.
