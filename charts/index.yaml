@@ -1,65 +1,178 @@
 apiVersion: v1
 entries:
-  openebs:
+  cwf-orc8r:
   - apiVersion: v2
-    appVersion: 3.8.0
-    created: "2023-09-15T16:50:20.964539554+05:30"
+    appVersion: 1.8.0
+    created: "2023-09-26T15:58:25.849453044+05:30"
     dependencies:
-    - condition: openebs-ndm.enabled
-      name: openebs-ndm
-      repository: https://openebs.github.io/node-disk-manager
-      version: 2.1.0
-    - condition: localpv-provisioner.enabled
-      name: localpv-provisioner
-      repository: https://openebs.github.io/dynamic-localpv-provisioner
-      version: 3.4.0
-    - condition: cstor.enabled
-      name: cstor
-      repository: https://openebs.github.io/cstor-operators
-      version: 3.5.0
-    - condition: jiva.enabled
-      name: jiva
-      repository: https://openebs.github.io/jiva-operator
-      version: 3.5.0
-    - condition: zfs-localpv.enabled
-      name: zfs-localpv
-      repository: https://openebs.github.io/zfs-localpv
-      version: 2.3.0
-    - condition: lvm-localpv.enabled
-      name: lvm-localpv
-      repository: https://openebs.github.io/lvm-localpv
-      version: 1.2.0
-    - condition: nfs-provisioner.enabled
-      name: nfs-provisioner
-      repository: https://openebs.github.io/dynamic-nfs-provisioner
-      version: 0.10.0
-    - condition: mayastor.enabled
-      name: mayastor
-      repository: https://openebs.github.io/mayastor-extensions
-      version: 2.3.0
-    description: Containerized Attached Storage for Kubernetes
-    digest: dfbe7599abca1b9af8ee4c2c1147060fce24583d8570642636a8f4adc880fe4c
-    home: http://www.openebs.io/
-    icon: https://raw.githubusercontent.com/cncf/artwork/HEAD/projects/openebs/icon/color/openebs-icon-color.png
+    - name: orc8rlib
+      repository: file://../../../../orc8r/cloud/helm/orc8rlib
+      version: 0.1.4
+    description: A Helm chart for magma orchestrator's cwf module
+    digest: f2ff2fe08e98e8e1f19a4f416827b2ef529e1383a9831a59c48b7d21bd8862a0
     keywords:
-    - cloud-native-storage
-    - block-storage
-    - local-storage
-    - iSCSI
-    - NVMe
-    - storage
-    - kubernetes
-    maintainers:
-    - email: kiran.mova@mayadata.io
-      name: kmova
-    - email: prateek.pandey@mayadata.io
-      name: prateekpandey14
-    - email: shovan.maity@mayadata.io
-      name: shovanmaity
-    name: openebs
+    - magma
+    - or8cr
+    - cwf-orc8r
+    name: cwf-orc8r
     sources:
-    - https://github.com/openebs/openebs
+    - https://github.com/magma/magma
     urls:
-    - openebs-3.8.0.tgz
-    version: 3.8.0
-generated: "2023-09-15T16:50:20.92390566+05:30"
+    - cwf-orc8r-1.8.0.tgz
+    version: 1.8.0
+  domain-proxy:
+  - apiVersion: v2
+    appVersion: 1.8.0
+    created: "2023-09-26T15:58:25.851124834+05:30"
+    description: A Helm chart for magma orchestrator's domain-proxy module.
+    digest: 00096708ee37e3266d1eaf9b060cf347bdade9ac2b706925840436275db87aeb
+    keywords:
+    - magma
+    - orc8r
+    - dp
+    name: domain-proxy
+    sources:
+    - https://github.com/magma/magma
+    type: application
+    urls:
+    - domain-proxy-1.8.0.tgz
+    version: 1.8.0
+  efs-provisioner:
+  - apiVersion: v1
+    appVersion: v2.4.0
+    created: "2023-09-26T15:58:25.851691655+05:30"
+    deprecated: true
+    description: DEPRECATED A Helm chart for the AWS EFS external storage provisioner
+    digest: 46252c06f23091332120c793bdd63bb9f678fbf4c122a7519961b24d67b1bf00
+    home: https://github.com/kubernetes-incubator/external-storage/tree/master/aws/efs
+    name: efs-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/aws/efs
+    - https://github.com/mirror/busybox
+    urls:
+    - efs-provisioner-0.13.2.tgz
+    version: 0.13.2
+  elasticsearch-curator:
+  - apiVersion: v1
+    appVersion: 5.7.6
+    created: "2023-09-26T15:58:25.852305544+05:30"
+    deprecated: true
+    description: DEPRECATED A Helm chart for Elasticsearch Curator
+    digest: c2f15e376f72f6163273e97fe8fe6f0c654e6943745389e7852ef4113a81fe21
+    home: https://github.com/elastic/curator
+    keywords:
+    - curator
+    - elasticsearch
+    - elasticsearch-curator
+    name: elasticsearch-curator
+    sources:
+    - https://github.com/kubernetes/charts/elasticsearch-curator
+    - https://github.com/pires/docker-elasticsearch-curator
+    urls:
+    - elasticsearch-curator-2.2.3.tgz
+    version: 2.2.3
+  feg-orc8r:
+  - apiVersion: v2
+    appVersion: 1.8.0
+    created: "2023-09-26T15:58:25.853170002+05:30"
+    dependencies:
+    - name: orc8rlib
+      repository: file://../../../../orc8r/cloud/helm/orc8rlib
+      version: 0.1.4
+    description: A Helm chart for magma orchestrator's feg module
+    digest: 0d1a7a83eba1006ace683943aa663289f21bf412f38e15e1019db79f70692329
+    keywords:
+    - magma
+    - or8cr
+    - feg-orc8r
+    name: feg-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - feg-orc8r-1.8.0.tgz
+    version: 1.8.0
+  fluentd:
+  - apiVersion: v1
+    appVersion: v2.4.0
+    created: "2023-09-26T15:58:25.854005595+05:30"
+    description: A Fluentd Elasticsearch Helm chart for Kubernetes.
+    digest: f77ce45253caa7e9b940269ced9594765c81094f9b45502c101a5898edd2a40b
+    home: https://www.fluentd.org/
+    icon: https://raw.githubusercontent.com/fluent/fluentd-docs/master/public/logo/Fluentd_square.png
+    maintainers:
+    - email: pete.brown@powerhrg.com
+      name: rendhalver
+    - email: maxime@root314.com
+      name: miouge1
+    - email: hfernandez@mesosphere.com
+      name: hectorj2f
+    name: fluentd
+    sources:
+    - https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/fluentd-elasticsearch/fluentd-es-image
+    - https://quay.io/repository/coreos/fluentd-kubernetes
+    - https://github.com/coreos/fluentd-kubernetes-daemonset
+    - https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
+    urls:
+    - fluentd-2.3.2.tgz
+    version: 2.3.2
+  lte-orc8r:
+  - apiVersion: v2
+    appVersion: 1.8.0
+    created: "2023-09-26T15:58:25.856188182+05:30"
+    dependencies:
+    - name: orc8rlib
+      repository: file://../../../../orc8r/cloud/helm/orc8rlib
+      version: 0.1.4
+    description: A Helm chart for magma orchestrator's lte module
+    digest: d98e56e10cc1c1e9f3b51a132f11d4ba8d4bcfb26eb5d5a2b4b734ea13cfc8fa
+    keywords:
+    - magma
+    - or8cr
+    - lte-orc8r
+    name: lte-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - lte-orc8r-1.8.0.tgz
+    version: 1.8.0
+  orc8r:
+  - apiVersion: v2
+    appVersion: 1.8.0
+    created: "2023-09-26T15:58:25.86466286+05:30"
+    dependencies:
+    - condition: certs.create
+      name: certs
+      repository: ""
+      version: 0.1.0
+    - condition: secrets.create
+      name: secrets
+      repository: ""
+      version: 0.1.10
+    - condition: metrics.enabled
+      name: metrics
+      repository: ""
+      version: 1.4.24
+    - condition: nms.enabled
+      name: nms
+      repository: ""
+      version: 0.1.12
+    - condition: logging.enabled
+      name: logging
+      repository: ""
+      version: 0.1.10
+    - name: orc8rlib
+      repository: file://../orc8rlib
+      version: 0.1.4
+    description: Helm chart for the Magma Orchestrator
+    digest: e1fe48c27855f2177d997f41f823ad71ba6130ac5a4ded506d72f6617f2c8d12
+    home: https://www.magmacore.org
+    keywords:
+    - magma
+    - orc8r
+    name: orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - orc8r-1.8.0.tgz
+    version: 1.8.0
+generated: "2023-09-26T15:58:25.848552857+05:30"
