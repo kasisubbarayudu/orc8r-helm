@@ -1,0 +1,35 @@
+apiVersion: v2
+appVersion: 1.8.0
+dependencies:
+- condition: certs.create
+  name: certs
+  repository: ""
+  version: 0.1.0
+- condition: secrets.create
+  name: secrets
+  repository: ""
+  version: 0.1.10
+- condition: metrics.enabled
+  name: metrics
+  repository: ""
+  version: 1.4.24
+- condition: nms.enabled
+  name: nms
+  repository: ""
+  version: 0.1.12
+- condition: logging.enabled
+  name: logging
+  repository: ""
+  version: 0.1.10
+- name: orc8rlib
+  repository: file://../orc8rlib
+  version: 0.1.4
+description: Helm chart for the Magma Orchestrator
+home: https://www.magmacore.org
+keywords:
+- magma
+- orc8r
+name: orc8r
+sources:
+- https://github.com/magma/magma
+version: 1.8.0
