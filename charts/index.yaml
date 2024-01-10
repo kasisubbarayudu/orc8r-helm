@@ -3,13 +3,13 @@ entries:
   cwf-orc8r:
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2023-09-26T15:58:25.849453044+05:30"
+    created: "2024-01-10T20:04:33.703370311+05:30"
     dependencies:
     - name: orc8rlib
       repository: file://../../../../orc8r/cloud/helm/orc8rlib
       version: 0.1.4
     description: A Helm chart for magma orchestrator's cwf module
-    digest: f2ff2fe08e98e8e1f19a4f416827b2ef529e1383a9831a59c48b7d21bd8862a0
+    digest: 55492af447523dc0a7520f8d04766dca0f0ee9d90e9ea45a1e0e4438f467e1ab
     keywords:
     - magma
     - or8cr
@@ -23,7 +23,7 @@ entries:
   domain-proxy:
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2023-09-26T15:58:25.851124834+05:30"
+    created: "2024-01-10T20:04:33.704992389+05:30"
     description: A Helm chart for magma orchestrator's domain-proxy module.
     digest: 00096708ee37e3266d1eaf9b060cf347bdade9ac2b706925840436275db87aeb
     keywords:
@@ -40,7 +40,7 @@ entries:
   efs-provisioner:
   - apiVersion: v1
     appVersion: v2.4.0
-    created: "2023-09-26T15:58:25.851691655+05:30"
+    created: "2024-01-10T20:04:33.705531575+05:30"
     deprecated: true
     description: DEPRECATED A Helm chart for the AWS EFS external storage provisioner
     digest: 46252c06f23091332120c793bdd63bb9f678fbf4c122a7519961b24d67b1bf00
@@ -55,7 +55,7 @@ entries:
   elasticsearch-curator:
   - apiVersion: v1
     appVersion: 5.7.6
-    created: "2023-09-26T15:58:25.852305544+05:30"
+    created: "2024-01-10T20:04:33.706148875+05:30"
     deprecated: true
     description: DEPRECATED A Helm chart for Elasticsearch Curator
     digest: c2f15e376f72f6163273e97fe8fe6f0c654e6943745389e7852ef4113a81fe21
@@ -74,13 +74,13 @@ entries:
   feg-orc8r:
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2023-09-26T15:58:25.853170002+05:30"
+    created: "2024-01-10T20:04:33.707045495+05:30"
     dependencies:
     - name: orc8rlib
       repository: file://../../../../orc8r/cloud/helm/orc8rlib
       version: 0.1.4
     description: A Helm chart for magma orchestrator's feg module
-    digest: 0d1a7a83eba1006ace683943aa663289f21bf412f38e15e1019db79f70692329
+    digest: a700594c51121ef4df92491b22c645dcbb000a5878d37c55cfcb5c3a36b8f3b4
     keywords:
     - magma
     - or8cr
@@ -94,7 +94,7 @@ entries:
   fluentd:
   - apiVersion: v1
     appVersion: v2.4.0
-    created: "2023-09-26T15:58:25.854005595+05:30"
+    created: "2024-01-10T20:04:33.707918442+05:30"
     description: A Fluentd Elasticsearch Helm chart for Kubernetes.
     digest: f77ce45253caa7e9b940269ced9594765c81094f9b45502c101a5898edd2a40b
     home: https://www.fluentd.org/
@@ -118,7 +118,7 @@ entries:
   lte-orc8r:
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2023-09-26T15:58:25.856188182+05:30"
+    created: "2024-01-10T20:04:33.70971072+05:30"
     dependencies:
     - name: orc8rlib
       repository: file://../../../../orc8r/cloud/helm/orc8rlib
@@ -138,7 +138,7 @@ entries:
   orc8r:
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2023-09-26T15:58:25.86466286+05:30"
+    created: "2024-01-10T20:04:33.717182522+05:30"
     dependencies:
     - condition: certs.create
       name: certs
@@ -164,7 +164,7 @@ entries:
       repository: file://../orc8rlib
       version: 0.1.4
     description: Helm chart for the Magma Orchestrator
-    digest: e1fe48c27855f2177d997f41f823ad71ba6130ac5a4ded506d72f6617f2c8d12
+    digest: 2e377902d2ac6a8454749856832ba055e6dac370b4bf90161e2c0bc225fa44af
     home: https://www.magmacore.org
     keywords:
     - magma
@@ -175,4 +175,4 @@ entries:
     urls:
     - orc8r-1.8.0.tgz
     version: 1.8.0
-generated: "2023-09-26T15:58:25.848552857+05:30"
+generated: "2024-01-10T20:04:33.702483883+05:30"
