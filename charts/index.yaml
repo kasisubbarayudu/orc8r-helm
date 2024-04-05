@@ -3,7 +3,7 @@ entries:
   cwf-orc8r:
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2024-01-10T20:04:33.703370311+05:30"
+    created: "2024-04-05T09:44:53.13175821+05:30"
     dependencies:
     - name: orc8rlib
       repository: file://../../../../orc8r/cloud/helm/orc8rlib
@@ -23,7 +23,7 @@ entries:
   domain-proxy:
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2024-01-10T20:04:33.704992389+05:30"
+    created: "2024-04-05T09:44:53.133929448+05:30"
     description: A Helm chart for magma orchestrator's domain-proxy module.
     digest: 00096708ee37e3266d1eaf9b060cf347bdade9ac2b706925840436275db87aeb
     keywords:
@@ -40,7 +40,7 @@ entries:
   efs-provisioner:
   - apiVersion: v1
     appVersion: v2.4.0
-    created: "2024-01-10T20:04:33.705531575+05:30"
+    created: "2024-04-05T09:44:53.134698036+05:30"
     deprecated: true
     description: DEPRECATED A Helm chart for the AWS EFS external storage provisioner
     digest: 46252c06f23091332120c793bdd63bb9f678fbf4c122a7519961b24d67b1bf00
@@ -55,7 +55,7 @@ entries:
   elasticsearch-curator:
   - apiVersion: v1
     appVersion: 5.7.6
-    created: "2024-01-10T20:04:33.706148875+05:30"
+    created: "2024-04-05T09:44:53.1355728+05:30"
     deprecated: true
     description: DEPRECATED A Helm chart for Elasticsearch Curator
     digest: c2f15e376f72f6163273e97fe8fe6f0c654e6943745389e7852ef4113a81fe21
@@ -74,7 +74,7 @@ entries:
   feg-orc8r:
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2024-01-10T20:04:33.707045495+05:30"
+    created: "2024-04-05T09:44:53.136785894+05:30"
     dependencies:
     - name: orc8rlib
       repository: file://../../../../orc8r/cloud/helm/orc8rlib
@@ -94,7 +94,7 @@ entries:
   fluentd:
   - apiVersion: v1
     appVersion: v2.4.0
-    created: "2024-01-10T20:04:33.707918442+05:30"
+    created: "2024-04-05T09:44:53.138004975+05:30"
     description: A Fluentd Elasticsearch Helm chart for Kubernetes.
     digest: f77ce45253caa7e9b940269ced9594765c81094f9b45502c101a5898edd2a40b
     home: https://www.fluentd.org/
@@ -118,13 +118,13 @@ entries:
   lte-orc8r:
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2024-01-10T20:04:33.70971072+05:30"
+    created: "2024-04-05T09:44:53.139874001+05:30"
     dependencies:
     - name: orc8rlib
       repository: file://../../../../orc8r/cloud/helm/orc8rlib
       version: 0.1.4
     description: A Helm chart for magma orchestrator's lte module
-    digest: d98e56e10cc1c1e9f3b51a132f11d4ba8d4bcfb26eb5d5a2b4b734ea13cfc8fa
+    digest: 39cc1e07b13d6aecd87b1e5d623b37bb007532b2622238b3c2789370c252f80d
     keywords:
     - magma
     - or8cr
@@ -138,7 +138,7 @@ entries:
   orc8r:
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2024-01-10T20:04:33.717182522+05:30"
+    created: "2024-04-05T09:44:53.150282675+05:30"
     dependencies:
     - condition: certs.create
       name: certs
@@ -164,7 +164,7 @@ entries:
       repository: file://../orc8rlib
       version: 0.1.4
     description: Helm chart for the Magma Orchestrator
-    digest: 2e377902d2ac6a8454749856832ba055e6dac370b4bf90161e2c0bc225fa44af
+    digest: 5ee9ad77cfd07882bc749e161aa859fc30e85a23d8ad763385fb52b1b0cfd2e9
     home: https://www.magmacore.org
     keywords:
     - magma
@@ -175,4 +175,15 @@ entries:
     urls:
     - orc8r-1.8.0.tgz
     version: 1.8.0
-generated: "2024-01-10T20:04:33.702483883+05:30"
+  test:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2024-04-05T09:44:53.150554604+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 456aa77c41aadeb7accb6328a284d94b5287843ca6d6544f60aa26e693a49055
+    name: test
+    type: application
+    urls:
+    - test-1.tgz
+    version: "1"
+generated: "2024-04-05T09:44:53.130607288+05:30"
